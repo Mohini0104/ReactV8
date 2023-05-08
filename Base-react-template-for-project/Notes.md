@@ -10,6 +10,10 @@ npm install -D prettier@2.7.1
 - In the package.json file under script add
 
 ```Javascript
+ "format": "prettier --write \"src/**/*.{js,jsx}\""
+```
+
+```Javascript
 npm run format
 ```
 
@@ -99,10 +103,12 @@ npm install react@18.2.0 react-dom@18.2.0
 ```Javascript
 npm run dev
 ```
+
 - ESLint + React
-We need to give ESLint a hand to get it to recognize React and not yell about React not being used. Right now it thinks we're importing React and not using because it doesn't know what to do with React. Let's help it.
+  We need to give ESLint a hand to get it to recognize React and not yell about React not being used. Right now it thinks we're importing React and not using because it doesn't know what to do with React. Let's help it.
 
 Run this:
+
 ```Javascript
 npm install -D eslint-plugin-import@2.26.0 eslint-plugin-jsx-a11y@6.6.1 eslint-plugin-react@7.31.8
 ```
