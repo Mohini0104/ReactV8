@@ -47,7 +47,11 @@ run npm install -D eslint@8.24.0 eslint-config-prettier@8.5.0
   }
 }
 ```
-
+- in the package.json file add, under the script section
+```Javascript
+ "lint": "eslint \"src/**/*.{js,jsx}\" --quiet",
+```
+ 
 - add file `.gitignore` and inside the file add
 
 ```Javascript
