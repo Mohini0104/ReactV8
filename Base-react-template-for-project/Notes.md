@@ -177,3 +177,5 @@ add homepage property:
 ```Javascript
 https://{username}.github.io/{repo-name}
 ```
+- Full process to deploy github pages(https://github.com/gitname/react-gh-pages)
+
